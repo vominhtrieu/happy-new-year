@@ -124,7 +124,7 @@ svg {
   animation: zoom 2s ease-in-out infinite alternate;
 }
 
-.cat, #chat-bubble {
+.cat {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -220,27 +220,27 @@ svg {
   .cloud1 {
     width: 14rem;
     left: -6rem;
-    bottom: -1rem;
+    bottom: 0rem;
     animation: none;
   }
 
   .cloud2 {
     width: 10rem;
     left: 0rem !important;
-    bottom: -2rem;
+    bottom: -1rem;
     animation: none;
   }
   
   .cloud3 {
     width: 10rem;
     right: 5rem;
-    bottom: -2rem;
+    bottom: -1rem;
     animation: none;
   }
   .cloud4 {
     width: 14rem;
     right: -6rem;
-    bottom: -1rem;
+    bottom: 0rem;
     animation: none;
   }
   .red-flower {
