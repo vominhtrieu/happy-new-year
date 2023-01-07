@@ -233,13 +233,13 @@ svg {
   .cloud1 {
     width: 14rem;
     left: -6rem;
-    bottom: 0rem;
+    bottom: 2rem;
     animation: none;
   }
 
   .cloud2 {
     width: 10rem;
-    left: 0rem !important;
+    left: 2rem !important;
     bottom: -1rem;
     animation: none;
   }
@@ -247,13 +247,13 @@ svg {
   .cloud3 {
     width: 10rem;
     right: 5rem;
-    bottom: -1rem;
+    bottom: 1rem;
     animation: none;
   }
   .cloud4 {
     width: 14rem;
     right: -6rem;
-    bottom: 0rem;
+    bottom: 1rem;
     animation: none;
   }
   .red-flower {
@@ -269,5 +269,6 @@ svg {
 
   .cat {
     width: 10rem;
+    transform: translate(0, -20rem);
   }
 }
