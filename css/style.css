@@ -202,6 +202,19 @@ svg {
     top: -2rem !important;
   }
 
+  .tree1, .tree2 {
+    top: -2rem;
+    width: 12rem !important;
+  }
+
+  .tree1 {
+    left: -1rem !important;
+  }
+
+  .tree2 {
+    right: -1rem !important;
+  }
+
   .latern.left {
     left: 1rem !important;
     width: 10rem;
