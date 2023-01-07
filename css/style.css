@@ -269,6 +269,6 @@ svg {
 
   .cat {
     width: 10rem;
-    transform: translate(0, -20rem);
+    transform: translate(0, -2rem);
   }
 }
