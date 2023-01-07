@@ -5,510 +5,255 @@ html, body {
 }
 
 body {
-  background-color: #1c2033;
+  background-image: url("../img/background.png");
+  background-size: cover;
 }
 
-.heading-top {
-  color: white;
-  text-align: center;
-  padding: 10px;
-  margin-bottom: -70px;
-  text-transform: unset;
-  font-family: system-ui;
-  letter-spacing: 1px;
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.mauto {
-  margin: auto;
-}
-#under-circle1 {
-  -webkit-animation: rotate-center 2s linear infinite both;
-  animation: rotate-center 2s linear infinite both;
-  transform-box: fill-box;
-  transform-origin: center;
-}
-
-#under-cirlce2 {
-  -webkit-animation: rotate-center 3s linear infinite both;
-  animation: rotate-center 3s linear infinite both;
-  transform-box: fill-box;
-  transform-origin: center;
+.square {
+  position: relative;
+  background-image: url("../img/square.png");
+  height: 90%;
+  width: 90%;
+  max-height: 1000px;
+  max-width: 1000px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-#Vector_35 {
-  -webkit-animation: rotate-center 3s linear infinite both;
-  animation: rotate-center 3s linear infinite both;
-  transform-box: fill-box;
-  transform-origin: center;
-}
-#Vector_30 {
-  -webkit-animation: rotate-center 2s linear infinite both;
-  animation: rotate-center 2s linear infinite both;
-  transform-box: fill-box;
-  transform-origin: center;
+svg {
+  width: 100%;
+  height: 100%;
 }
 
-#circle1 {
-  -webkit-animation: rotate-center 1s linear infinite both;
-  animation: rotate-center 1s linear infinite both;
-  transform-box: fill-box;
-  transform-origin: center;
-}
-#Group_15 {
-  -webkit-animation: rotate-center 1s linear infinite both;
-  animation: rotate-center 1s linear infinite both;
-  transform-box: fill-box;
-  transform-origin: center;
+.tree1 {
+  position: absolute;
+  width: 40rem;
+  top: -10rem;
+  left: 10rem;
 }
 
-#Group_16 {
-  -webkit-animation: rotate-center 3s linear infinite both;
-  animation: rotate-center 3s linear infinite both;
-  transform-box: fill-box;
-  transform-origin: center;
+.tree2 {
+  position: absolute;
+  width: 40rem;
+  top: -10rem;
+  right: 10rem;
 }
 
-#small-cicle1 {
-  -webkit-animation: rotate-center 3s linear infinite both;
-  animation: rotate-center 3s linear infinite both;
-  transform-box: fill-box;
-  transform-origin: center;
+.cloud1 {
+  width: 40rem;
+  position: absolute;
+  left: -30rem;
+  bottom: -10rem;
+  z-index: 10;
+  animation: move-right 20s linear infinite;
 }
 
-#circle2 {
-  -webkit-animation: rotate-center 2.4s linear infinite both;
-  animation: rotate-center 2.4s linear infinite both;
-  transform-box: fill-box;
-  transform-origin: center;
-}
-#Group_17 {
-  -webkit-animation: rotate-center 2.4s linear infinite both;
-  animation: rotate-center 2.4s linear infinite both;
-  transform-box: fill-box;
-  transform-origin: center;
-}
-#Vector_191 {
-  -webkit-animation: flip-vertical-left 2s
-    cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate both;
-  animation: flip-vertical-left 2s cubic-bezier(0.455, 0.03, 0.515, 0.955)
-    infinite alternate both;
-  transform-box: fill-box;
-  transform-origin: center;
+.cloud2 {
+  width: 30rem;
+  position: absolute;
+  left: 20rem;
+  bottom: -10rem;
+  z-index: 5;
+  animation: move-right 20s linear infinite;
 }
 
-#Vector_24 {
-  -webkit-animation: flip-vertical-left 2s
-    cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate both;
-  animation: flip-vertical-left 2s cubic-bezier(0.455, 0.03, 0.515, 0.955)
-    infinite alternate both;
-  transform-box: fill-box;
-  transform-origin: center;
+.cloud3 {
+  width: 30rem;
+  position: absolute;
+  right: 20rem;
+  bottom: -10rem;
+  z-index: 4;
+  animation: move-left 20s linear infinite;
 }
 
-#giftbox1 {
-  transform-origin: top;
-  transform-box: fill-box;
+.cloud4 {
+  width: 40rem;
+  position: absolute;
+  right: -30rem;
+  bottom: -10rem;
+  z-index: 9;
+  animation: move-left 20s linear infinite;
 }
 
-#jhalar1 {
-  animation: swing ease-in-out 1s infinite alternate;
-  transform-origin: top;
-  transform-box: fill-box;
-}
-#jhalar2 {
-  animation: swing ease-in-out 1.3s infinite alternate;
-  transform-origin: top;
-  transform-box: fill-box;
+.red-flower {
+  position: absolute;
+  width: 30rem;
+  z-index: -1;
+  left: 5rem;
 }
 
-#jhalar3 {
-  animation: swing ease-in-out 1.5s infinite alternate;
-  transform-origin: top;
-  transform-box: fill-box;
-}
-#jharlar3 {
-  animation: swing ease-in-out 1.5s infinite alternate;
-  transform-origin: top;
-  transform-box: fill-box;
-}
-#jhalar5 {
-  animation: swing ease-in-out 1.3s infinite alternate;
-  transform-origin: top;
-  transform-box: fill-box;
-}
-#jhalar6 {
-  animation: swing ease-in-out 1s infinite alternate;
-  transform-origin: top;
-  transform-box: fill-box;
+.rotate-right {
+  animation: rotate-right 20s linear infinite;
 }
 
-#Group_23 {
-  -webkit-animation: scale-in-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    infinite alternate both;
-  animation: scale-in-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
-    alternate both;
-  transform-box: fill-box;
-  transform-origin: center;
+.latern {
+  width: 25rem;
+  position: absolute;
+  animation: swing 2s ease-in-out infinite alternate;
+  transform-origin: 50% 0;
+  z-index: 999;
 }
 
-#Group_11 {
-  -webkit-animation: scale-in-center 2.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    infinite alternate both;
-  animation: scale-in-center 2.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
-    alternate both;
-  transform-box: fill-box;
-  transform-origin: center;
+.latern.left {
+  left: 40rem;
+  top: -10rem;
 }
 
-#Group_10 {
-  -webkit-animation: scale-in-center 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    infinite alternate both;
-  animation: scale-in-center 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
-    alternate both;
-  transform-box: fill-box;
-  transform-origin: center;
+.latern.right {
+  right: 40rem;
+  top: -10rem;
 }
 
-#Group_9 {
-  -webkit-animation: scale-in-center 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    infinite alternate both;
-  animation: scale-in-center 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
-    alternate both;
-  transform-box: fill-box;
-  transform-origin: center;
+.texts {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: zoom 2s ease-in-out infinite alternate;
 }
 
-#Group_28 {
-  -webkit-animation: scale-in-center 1.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    infinite alternate both;
-  animation: scale-in-center 1.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
-    alternate both;
-  transform-box: fill-box;
-  transform-origin: center;
+.cat {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 40%);
+  z-index: 9999;
+  animation: cat-move 10s ease-in-out infinite alternate;
 }
 
-#Group_24 {
-  -webkit-animation: scale-in-center 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    infinite alternate both;
-  animation: scale-in-center 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
-    alternate both;
-  transform-box: fill-box;
-  transform-origin: center;
-}
-
-#Group_25 {
-  -webkit-animation: scale-in-center 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    infinite alternate both;
-  animation: scale-in-center 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
-    alternate both;
-  transform-box: fill-box;
-  transform-origin: center;
-}
-#Group_26 {
-  -webkit-animation: scale-in-center 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    infinite alternate both;
-  animation: scale-in-center 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
-    alternate both;
-  transform-box: fill-box;
-  transform-origin: center;
-}
-
-#Group_27 {
-  -webkit-animation: scale-in-center 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    infinite alternate both;
-  animation: scale-in-center 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
-    alternate both;
-  transform-box: fill-box;
-  transform-origin: center;
-}
-
-#Group_14 {
-  -webkit-animation: scale-in-center 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    infinite alternate both;
-  animation: scale-in-center 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
-    alternate both;
-  transform-box: fill-box;
-  transform-origin: center;
-}
-
-#Group_13 {
-  -webkit-animation: scale-in-center 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    infinite alternate both;
-  animation: scale-in-center 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
-    alternate both;
-  transform-box: fill-box;
-  transform-origin: center;
-}
-
-#Group_12 {
-  -webkit-animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    infinite alternate both;
-  animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
-    alternate both;
-  transform-box: fill-box;
-  transform-origin: center;
-}
-
-#year {
-  -webkit-animation: focus-in-expand-fwd 0.8s
-    cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
-  animation: focus-in-expand-fwd 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    infinite alternate both;
-}
-
-/***************2020************/
-
-@-webkit-keyframes focus-in-expand-fwd {
+@keyframes cat-move {
   0% {
-    letter-spacing: -0.5em;
-    -webkit-transform: translateZ(-800px);
-    transform: translateZ(-800px);
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
+    bottom: 0;
+    right: 0;
   }
   100% {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-filter: blur(0);
-    filter: blur(0);
-    opacity: 1;
+    right: 100%;
+    bottom: 0;
   }
 }
-@keyframes focus-in-expand-fwd {
+
+@keyframes move-right {
   0% {
-    letter-spacing: -0.5em;
-    -webkit-transform: translateZ(-800px);
-    transform: translateZ(-800px);
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20rem);
   }
   100% {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-filter: blur(0);
-    filter: blur(0);
-    opacity: 1;
+    transform: translateX(0);
   }
 }
 
-/**************top to bottom********/
-
-@-webkit-keyframes bounce-in-top {
+@keyframes move-left {
   0% {
-    -webkit-transform: translateY(-500px);
-    transform: translateY(-500px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    opacity: 0;
+    transform: translateX(0);
   }
-  38% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  55% {
-    -webkit-transform: translateY(-65px);
-    transform: translateY(-65px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  72% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  81% {
-    -webkit-transform: translateY(-28px);
-    transform: translateY(-28px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  90% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  95% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
+  50% {
+    transform: translateX(-20rem);
   }
   100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
+    transform: translateX(0);
   }
 }
-@keyframes bounce-in-top {
+
+
+@keyframes rotate-right {
   0% {
-    -webkit-transform: translateY(-500px);
-    transform: translateY(-500px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-  38% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  55% {
-    -webkit-transform: translateY(-65px);
-    transform: translateY(-65px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  72% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  81% {
-    -webkit-transform: translateY(-28px);
-    transform: translateY(-28px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  90% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  95% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
+    transform: rotate(360deg);
   }
 }
 
-/***********star pop up********/
-
-@-webkit-keyframes scale-in-center {
-  0% {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-@keyframes scale-in-center {
-  0% {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-/****************giftbox*****************/
-
-/*************swing************/
 @keyframes swing {
   0% {
-    transform: rotate(3deg);
+    transform: rotate(-10deg);
   }
   100% {
-    transform: rotate(-3deg);
+    transform: rotate(10deg);
   }
 }
-/**********flip***************/
 
-@-webkit-keyframes flip-vertical-left {
+@keyframes zoom {
   0% {
-    -webkit-transform: rotateY(0);
-    transform: rotateY(0);
+    transform: scale(1);
   }
   100% {
-    -webkit-transform: rotateY(-180deg);
-    transform: rotateY(-180deg);
-  }
-}
-@keyframes flip-vertical-left {
-  0% {
-    -webkit-transform: rotateY(0);
-    transform: rotateY(0);
-  }
-  100% {
-    -webkit-transform: rotateY(-180deg);
-    transform: rotateY(-180deg);
+    transform: scale(1.1);
   }
 }
 
-/***********rotate***************/
-
-@-webkit-keyframes rotate-center {
-  0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
+@media screen and (max-width: 768px) { 
+  .latern {
+    top: -2rem !important;
   }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+
+  .latern.left {
+    left: 1rem !important;
+    width: 10rem;
   }
-}
-@keyframes rotate-center {
-  0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
+
+  .latern.right {
+    right: 1rem !important;
+    width: 10rem;
   }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+
+  .red-flower {
+    width: 10rem !important;
+    bottom: 40rem;
   }
-}
 
-/*************anime css*****************/
-#newyear2020 #happy {
-  stroke: #efc87e;
-  stroke-width: 1px;
-  fill: #1c2033;
-}
+  .cloud1 {
+    width: 14rem;
+    left: -6rem;
+    bottom: -1rem;
+    animation: none;
+  }
 
-#newyear2020 #NEWYEAR {
-  stroke: #efc87e;
-  stroke-width: 1px;
-  fill: #1c2033;
-}
+  .cloud2 {
+    width: 10rem;
+    left: 0rem !important;
+    bottom: -2rem;
+    animation: none;
+  }
+  
+  .cloud3 {
+    width: 10rem;
+    right: 5rem;
+    bottom: -2rem;
+    animation: none;
+  }
+  .cloud4 {
+    width: 14rem;
+    right: -6rem;
+    bottom: -1rem;
+    animation: none;
+  }
+  .red-flower {
+    width: 20rem;
+    left: 2rem;
+  }
+  .latern.left {
+    left: 20rem;
+  }
+  .latern.right {
+    right: 20rem;
+  }
 
-#newyear2020 #Group path {
-  stroke: #efc87e;
-  stroke-width: 1px;
-  fill: #1c2033;
-}
-
-.nav_container {
-    display: flex;
-    align-items: center;
-    height: 100vh;
-}
-
-.nav_container > div {
-    height: 100%;
+  .cat {
+    width: 10rem;
+  }
 }
