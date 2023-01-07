@@ -23,8 +23,8 @@ body {
   background-image: url("../img/square.png");
   height: 90%;
   width: 90%;
-  max-height: 1000px;
-  max-width: 1000px;
+  max-height: 600px;
+  max-width: 600px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -37,16 +37,16 @@ svg {
 
 .tree1 {
   position: absolute;
-  width: 40rem;
+  width: 30rem;
   top: -10rem;
-  left: 10rem;
+  left: 5rem;
 }
 
 .tree2 {
   position: absolute;
-  width: 40rem;
+  width: 30rem;
   top: -10rem;
-  right: 10rem;
+  right: 5rem;
 }
 
 .cloud1 {
@@ -97,7 +97,7 @@ svg {
 }
 
 .latern {
-  width: 25rem;
+  width: 15rem;
   position: absolute;
   animation: swing 2s ease-in-out infinite alternate;
   transform-origin: 50% 0;
@@ -105,12 +105,12 @@ svg {
 }
 
 .latern.left {
-  left: 40rem;
+  left: 20rem;
   top: -10rem;
 }
 
 .latern.right {
-  right: 40rem;
+  right: 20rem;
   top: -10rem;
 }
 
@@ -124,10 +124,11 @@ svg {
   animation: zoom 2s ease-in-out infinite alternate;
 }
 
-.cat {
+.cat, #chat-bubble {
   position: absolute;
   bottom: 0;
   right: 0;
+  width: 20rem;
   transform: translate(50%, 40%);
   z-index: 9999;
   animation: cat-move 10s ease-in-out infinite alternate;

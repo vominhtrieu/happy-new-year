@@ -1,33 +1,15 @@
-var design = anime({
-    targets: '#newyear2020 #happy',
-    strokeDashoffset: [anime.setDashoffset, 0],
-    easing: 'easeInOutSine',
-    duration: 2000,
-    delay: function(el, i) { return i * 250 },
-    direction: 'alternate',
-    loop: true
-  });
-  
-  var design = anime({
-    targets: '#newyear2020 #NEWYEAR',
-    strokeDashoffset: [anime.setDashoffset, 0],
-    easing: 'easeInOutSine',
-    duration: 2500,
-    delay: function(el, i) { return i * 250 },
-    direction: 'alternate',
-    loop: true
-  });
-  
-  
-  
-  var design = anime({
-    targets: '#newyear2020 #Vector_43,#Vector_210,#Vector_207,#Vector_42,#Vector_45',
-    translateY: -10,
-    easing: 'easeInOutSine',
-    duration: 2500,
-    delay: function(el, i) { return i * 250 },
-    direction: 'alternate',
-    loop: true
-  });
-  
-  
+function getParameterByName(name, url = window.location.href) {
+  name = name.replace(/[\[\]]/g, '\\$&');
+  var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+      results = regex.exec(url);
+  if (!results) return null;
+  if (!results[2]) return '';
+  return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
+var msg = getParameterByName('msg');
+setTimeout(() => {
+  if (msg) {
+    alert(msg);
+  }
+}, 1000);
