@@ -13,6 +13,6 @@ if (msg) {
   document.getElementById("message").innerHTML = msg;
 }
 
-window.onclick = () => {
+document.getElementsByClassName("popup")[0].onclick = () => {
   document.getElementsByClassName("popup")[0].classList.add("hide");
 }
