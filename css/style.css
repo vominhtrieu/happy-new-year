@@ -7,17 +7,24 @@ html, body {
 
 body {
   background-image: url("../img/background.png");
+  height: 100vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
 .container {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
+  height: -moz-available;
   height: -webkit-fill-available;
+  height: fill-available;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 .square {
@@ -298,12 +305,12 @@ svg {
 
   .latern.left {
     left: 1rem !important;
-    width: 10rem;
+    width: 8rem;
   }
 
   .latern.right {
     right: 1rem !important;
-    width: 10rem;
+    width: 8rem;
   }
 
   .red-flower {

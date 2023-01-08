@@ -16,3 +16,9 @@ if (msg) {
 document.getElementsByClassName("popup")[0].onclick = () => {
   document.getElementsByClassName("popup")[0].classList.add("hide");
 }
+
+window.addEventListener("orientationchange", function() {
+  if (navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) {
+    document.documentElement.innerHTML = document.documentElement.innerHTML;
+  }
+}, false);
