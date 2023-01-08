@@ -85,6 +85,42 @@ svg {
   animation: move-left 20s linear infinite;
 }
 
+.cloud5 {
+  width: 40rem;
+  position: absolute;
+  left: -60rem;
+  bottom: -10rem;
+  z-index: 10;
+  animation: move-right 20s linear infinite;
+}
+
+.cloud6 {
+  width: 30rem;
+  position: absolute;
+  left: 60rem;
+  bottom: -10rem;
+  z-index: 5;
+  animation: move-right 20s linear infinite;
+}
+
+.cloud7 {
+  width: 40rem;
+  position: absolute;
+  right: -60rem;
+  bottom: -10rem;
+  z-index: 10;
+  animation: move-left 20s linear infinite;
+}
+
+.cloud8 {
+  width: 30rem;
+  position: absolute;
+  right: 60rem;
+  bottom: -10rem;
+  z-index: 5;
+  animation: move-left 20s linear infinite;
+}
+
 .red-flower {
   position: absolute;
   width: 30rem;
@@ -147,25 +183,31 @@ svg {
 
 @keyframes move-right {
   0% {
-    transform: translateX(0);
+    transform: translateX(-100vw);
+    opacity: 1;
   }
-  50% {
-    transform: translateX(20rem);
+  95% {
+    transform: translateX(200vw);
+    opacity: 1;
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(200vw);
+    opacity: 0;
   }
 }
 
 @keyframes move-left {
   0% {
-    transform: translateX(0);
+    transform: translateX(100vw);
+    opacity: 1;
   }
-  50% {
-    transform: translateX(-20rem);
+  95% {
+    transform: translateX(-200vw);
+    opacity: 1;
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(-200vw);
+    opacity: 0;
   }
 }
 
@@ -174,7 +216,7 @@ svg {
   0% {
     transform: rotate(0deg);
   }
-  100% {
+  95% {
     transform: rotate(360deg);
   }
 }
@@ -234,27 +276,27 @@ svg {
     width: 14rem;
     left: -6rem;
     bottom: 2rem;
-    animation: none;
+    /* animation: none; */
   }
 
   .cloud2 {
     width: 10rem;
     left: 2rem !important;
     bottom: -1rem;
-    animation: none;
+    /* animation: none; */
   }
   
   .cloud3 {
     width: 10rem;
     right: 5rem;
     bottom: 1rem;
-    animation: none;
+    /* animation: none; */
   }
   .cloud4 {
     width: 14rem;
     right: -6rem;
     bottom: 1rem;
-    animation: none;
+    /* animation: none; */
   }
   .red-flower {
     width: 20rem;
