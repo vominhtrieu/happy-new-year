@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-family: 'Dancing Script', serif;
 }
 
 body {
@@ -168,6 +169,43 @@ svg {
   transform: translate(50%, 40%);
   z-index: 9999;
   animation: cat-move 10s ease-in-out infinite alternate;
+}
+
+.popup {
+  background-color: rgba(0,0,0,0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+}
+
+.hide {
+  display: none;
+  animation: hide-pop-up 1s ease-in-out;
+}
+
+#message {
+  width: 80%;
+  font-size: x-large;
+  color: white;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+#click-message {
+  font-size: medium;
+  color: rgba(255,255,255,0.8);
+}
+
+@keyframes hide-pop-up {
+  0% {
+    display: block;
+    opacity: 1;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
 }
 
 @keyframes cat-move {

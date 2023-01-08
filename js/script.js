@@ -8,8 +8,11 @@ function getParameterByName(name, url = window.location.href) {
 }
 
 var msg = getParameterByName('msg');
-setTimeout(() => {
-  if (msg) {
-    alert(msg);
-  }
-}, 1000);
+if (msg) {
+  document.getElementsByClassName("popup")[0].classList.remove("hide");
+  document.getElementById("message").innerHTML = msg;
+}
+
+window.onclick = () => {
+  document.getElementsByClassName("popup")[0].classList.add("hide");
+}
